@@ -12,9 +12,16 @@ TARGET = Animaster
 TEMPLATE = app
 
 
-SOURCES += src/main.cpp\
-        ui/MainWindow.cpp
+SOURCES += src/main.cpp \
+        ui/MainWindow.cpp \
+        ui/CombatCard.cpp \
 
-HEADERS  += ui/MainWindow.h
+HEADERS  += ui/MainWindow.h \
+            ui/CombatCard.h \
 
-FORMS    += ui/MainWindow.ui
+FORMS    += ui/MainWindow.ui \
+            ui/CombatCard.ui \
+    CombatCard.ui
+
+RESOURCES += \
+    ui/resources.qrc
