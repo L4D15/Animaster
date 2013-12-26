@@ -63,7 +63,7 @@ int DiceBag::roll(std::string description)
         result = 0;
         for (int currentRoll = 0; currentRoll < numberOfDices; ++currentRoll)
         {
-            result += rollDice(numberOfDices, numberOfFaces);
+            result += rollDice(1, numberOfFaces);
         }
         return result;
     }
