@@ -13,8 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += src/main.cpp\
-        ui/MainWindow.cpp
+        ui/MainWindow.cpp \
+    src/Combatant.cpp \
+    src/DiceBag.cpp
 
-HEADERS  += ui/MainWindow.h
+HEADERS  += ui/MainWindow.h \
+    src/Combatant.h \
+    src/DiceBag.h
 
 FORMS    += ui/MainWindow.ui
