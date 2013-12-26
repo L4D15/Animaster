@@ -11,17 +11,19 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Animaster
 TEMPLATE = app
 
-
-SOURCES += src/main.cpp \
+SOURCES += src/main.cpp\
         ui/MainWindow.cpp \
+        src/Combatant.cpp \
+        src/DiceBag.cpp \
         ui/CombatCard.cpp \
 
 HEADERS  += ui/MainWindow.h \
+            src/Combatant.h \
+            src/DiceBag.h \
             ui/CombatCard.h \
 
 FORMS    += ui/MainWindow.ui \
             ui/CombatCard.ui \
-    CombatCard.ui
 
 RESOURCES += \
     ui/resources.qrc
