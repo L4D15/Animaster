@@ -60,11 +60,8 @@ int DiceBag::roll(std::string description)
 
         *parseBuffer >> numberOfFaces;
 
-        result = 0;
-        for (int currentRoll = 0; currentRoll < numberOfDices; ++currentRoll)
-        {
-            result += rollDice(1, numberOfFaces);
-        }
+        result = rollDice(numberOfDices, numberOfFaces);
+
         return result;
     }
 
@@ -91,7 +88,7 @@ int DiceBag::roll(std::string description)
 
         return leftResult + rightResult;
     }
-    else
+    else if(subOperation == true)
     {
         std::string leftOperand;
         std::string rightOperand;
@@ -107,6 +104,8 @@ int DiceBag::roll(std::string description)
 
         return leftResult - rightResult;
     }
+
+    return 0;
 }
 
 int DiceBag::rollDice(unsigned int amount, unsigned int faces)
