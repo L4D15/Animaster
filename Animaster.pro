@@ -16,14 +16,17 @@ SOURCES += src/main.cpp\
         src/Combatant.cpp \
         src/DiceBag.cpp \
         ui/CombatCard.cpp \
+    ui/CombatTracker.cpp
 
 HEADERS  += ui/MainWindow.h \
             src/Combatant.h \
             src/DiceBag.h \
             ui/CombatCard.h \
+    ui/CombatTracker.h
 
 FORMS    += ui/MainWindow.ui \
             ui/CombatCard.ui \
+    ui/CombatTracker.ui
 
 RESOURCES += \
     ui/resources.qrc

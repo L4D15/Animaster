@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "src/DiceBag.h"
+#include "ui/CombatTracker.h"
 
 namespace Ui {
 class MainWindow;
@@ -33,6 +34,7 @@ private:
 private:
     Ui::MainWindow *ui;
     DiceBag*        diceBag;
+    CombatTracker*  combatTracker;
 };
 
 #endif // MAINWINDOW_H

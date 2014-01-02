@@ -10,6 +10,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // DiceBag configuration
     this->diceBag = new DiceBag();
+
+    // Add CombatTracker widget
+    this->combatTracker = new CombatTracker(this);
+    this->ui->combatTrackerLayout->addWidget(combatTracker);
 }
 
 MainWindow::~MainWindow()
@@ -56,7 +60,7 @@ void MainWindow::calculateAttack()
         int counterAttackBonus;
 
         counterAttackBonus = (static_cast<int>(result / 10)) * 5;
-        finalResult = QString("+%1C").arg(counterAttackBonus);
+        finalResult = QString("+%1C").arg((-1) * counterAttackBonus);
     }
     else
     {

@@ -230,7 +230,20 @@
       <property name="title">
        <string>Combat Tracker</string>
       </property>
-      <layout class="QVBoxLayout" name="combatTrackerLayout"/>
+      <layout class="QVBoxLayout" name="combatTrackerLayout">
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+      </layout>
      </widget>
     </item>
    </layout>
