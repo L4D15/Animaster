@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/defense_icon.png</file>
+        <file>img/sword_icon.png</file>
+        <file>img/turn_icon.png</file>
+        <file>img/anima_logo_small.png</file>
+    </qresource>
+</RCC>
